@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/NewXMLSchema"
+	xmlns:tns="http://www.example.org/NewXMLSchema"
+	elementFormDefault="qualified">
+
+<element name="families">
+	<complexType >
+
+		<sequence>
+			<element name="family" minOccurs="1" maxOccurs="unbounded" >
+				<complexType>
+					<sequence>
+
+						<element name="mother">
+							<complexType>
+								<sequence>
+									<element name="name" type="string" />
+									<element name="surname" type="string" />
+									<element name="age" type="int" />
+								</sequence>
+								<attribute name="maiden-name" use="required" />
+							</complexType>
+						</element>
+
+						<element name="father">
+							<complexType>
+								<sequence>
+									<element name="name" type="string" />
+									<element name="surname" type="string" />
+									<element name="age" type="int" />
+									<element name="military" minOccurs="0" maxOccurs="1" />
+								</sequence>
+							</complexType>
+						</element>
+
+						<element name="children">
+							<complexType>
+								<sequence>
+
+									<element name="child" minOccurs="0" maxOccurs="unbounded">
+										<complexType>
+											<sequence>
+												<element name="name" type="string" />
+												<element name="surname" type="string" />
+												<element name="age" type="int" />
+												
+												<element name="gender">
+													<simpleType>
+														<restriction base="string">
+															<enumeration value="female" />
+															<enumeration value="male" />
+														</restriction>
+													</simpleType>
+												</element>
+
+											</sequence>
+										</complexType>
+									</element>
+
+								</sequence>
+							</complexType>
+						</element>
+
+					</sequence>
+					<attribute name ="id" type = "int"/>
+				</complexType>
+			</element>
+
+		</sequence>
+
+	</complexType>
+</element>
+</schema>

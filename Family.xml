@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<families xmlns="http://www.example.org/Family-schema2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/Family-schema2 Family-schema2.xsd">
+
+	<family id="1">
+		<mother maiden-name="Ivanova">
+			<name>Kate</name>
+			<surname>Petrova</surname>
+			<age>39</age>
+		</mother>
+		<father>
+			<name>Igor</name>
+			<surname>Petrov</surname>
+			<age>35</age>
+			<military />
+		</father>
+		<children>
+			<child>
+				<name>Eva</name>
+				<surname>Petrova</surname>
+				<age>5</age>
+				<gender>female</gender>
+			</child>
+			<child>
+				<name>Mark</name>
+				<surname>Petrov</surname>
+				<age>3</age>
+				<gender>male</gender>
+			</child>
+		</children>
+	</family>
+
+	<family id="2">
+		<mother maiden-name="Sidorova">
+			<name>Olga</name>
+			<surname>Sidorova</surname>
+			<age>40</age>
+		</mother>
+		<father>
+			<name>Oleg</name>
+			<surname>Babin</surname>
+			<age>42</age>
+			<military />
+		</father>
+		<children>
+			<child>
+				<name>Alina</name>
+				<surname>Babina</surname>
+				<age>18</age>
+				<gender>female</gender>
+			</child>
+			<child>
+				<name>Semen</name>
+				<surname>Babin</surname>
+				<age>7</age>
+				<gender>male</gender>
+			</child>
+			<child>
+				<name>Fedor</name>
+				<surname>Babin</surname>
+				<age>7</age>
+				<gender>male</gender>
+			</child>
+		</children>
+	</family>
+
+	<family id="3">
+		<mother maiden-name="Lopata">
+			<name>Inna</name>
+			<surname>Lebedeva</surname>
+			<age>29</age>
+		</mother>
+		<father>
+			<name>Nikolai</name>
+			<surname>Lebedev</surname>
+			<age>39</age>
+		</father>
+		<children>
+			<child>
+				<name>Nina</name>
+				<surname>Lebedeva</surname>
+				<age>3</age>
+				<gender>female</gender>
+			</child>
+		</children>
+	</family>
+
+</families>
